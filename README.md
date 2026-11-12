@@ -20,8 +20,9 @@
 - Tạo buổi tập, thêm bài tập và ghi set/kg/rep/RIR.
 - Lưu lịch sử trong localStorage của trình duyệt.
 - Tính volume (kg × reps), thống kê tuần, PR và Estimated 1RM theo công thức Epley.
-- Thư viện bài tập theo nhóm cơ và bài tập tùy chỉnh, có ảnh minh họa khi dữ liệu ảnh tương ứng tồn tại.
-- Trang chi tiết bài tập với ảnh tư thế và liên kết tìm video hướng dẫn trên YouTube.
+- Thư viện mở rộng 317 bài tập thuộc 10 vùng cơ thể, phân loại thành các nhóm cơ nhỏ hơn; có tìm kiếm theo tên, cơ mục tiêu và thiết bị.
+- Trang chi tiết có ảnh minh họa, video MP4 phát trực tiếp, hướng dẫn từng bước, gợi ý kỹ thuật và lỗi thường gặp khi nguồn dữ liệu cung cấp.
+- Thư viện bài tập được lưu cache trên thiết bị sau lần tải đầu để hạn chế gọi API lặp lại.
 - Đồng hồ nghỉ giữa set: chọn 30–300 giây, bắt đầu/tạm dừng/đặt lại; tự chạy khi đánh dấu set hoàn thành.
 - Biểu đồ volume tuần và tiến bộ theo bài.
 - Light/Dark mode, xuất/nhập JSON để sao lưu.
@@ -33,5 +34,6 @@
 
 
 ## Nguồn ảnh và video
-- Ảnh bài tập tham chiếu từ [Free Exercise DB](https://github.com/yuhonas/free-exercise-db), dữ liệu phát hành theo Unlicense. Ảnh được tải từ GitHub Raw khi thiết bị có kết nối mạng; một số biến thể có thể chưa có ảnh tương ứng và ứng dụng sẽ hiển thị trạng thái thay thế.
-- Video không được nhúng sẵn hoặc xác nhận là video cụ thể; nút trong trang chi tiết mở kết quả tìm kiếm YouTube theo đúng tên bài tập để người dùng chọn hướng dẫn phù hợp.
+- Danh mục mở rộng và metadata/video lấy từ [Free Exercise DB with Videos](https://github.com/harshvishu/free-exercise-db-with-videos), công bố theo giấy phép MIT. Dữ liệu nguồn mô tả 317 bài tập và 593 video demo MP4.
+- Ứng dụng tải danh mục từ API công khai ở lần đầu và lưu cache trên thiết bị. Vì vậy, cần kết nối Internet trong lần tải đầu; video/ảnh cũng cần Internet để phát/tải. API demo có thể thay đổi hoặc giới hạn truy cập; nếu không truy cập được, ứng dụng vẫn hiển thị danh sách bài tập dự phòng.
+- Không thể liệt kê mọi biến thể bài tập tồn tại trên thế giới; đây là thư viện lớn theo bộ dữ liệu được nêu, bao phủ nhiều vùng cơ và loại thiết bị.
